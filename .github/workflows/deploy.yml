@@ -2,8 +2,7 @@ name: Build and Deploy Zola
 
 on:
   push:
-    branches:
-      - main        # or 'master' or whichever branch you use
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
@@ -16,10 +15,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+
+      # Install Zola manually
       - name: Install Zola
-        uses: getzola/zola-deploy-action@v1
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola@latest
+
       - name: Build site
         run: zola build
 
@@ -34,9 +37,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
 
