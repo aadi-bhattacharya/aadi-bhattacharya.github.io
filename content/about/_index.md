@@ -18,5 +18,4 @@ reaction = false
 
 hi, i'm aadi.
 
-i'm pursuing a m.sc in semiconductors and nanoscience from bits pilani.
-
+i'm pursuing a bachelors in computer science and a masters in semiconductors and nanoscience from bits pilani.

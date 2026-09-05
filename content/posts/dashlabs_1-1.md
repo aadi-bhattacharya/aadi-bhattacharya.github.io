@@ -15,15 +15,9 @@ unfortunately, i did not make it to the interview round, but it was a great lear
 
 ## assignment 1.
 
-> i might be wrong but i think the reason i didn't make it to interviews was i accidentally updated my google form to an unfinished draft(?) [i have contacted a PoR about it.]
-
 - [refer to the quiz here](https://github.com/aadi-bhattacharya/dashlabs-1-1/tree/main/task_1)
 
 #### notes on assignment 1:
-- lorem
-- ipsum
-- dot
-- amet
 
 A1:
 ```

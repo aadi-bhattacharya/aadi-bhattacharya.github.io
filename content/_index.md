@@ -20,4 +20,4 @@ recent_more_text = "more »"
 date_format = "%b %-d, %Y"
 +++
 
-haha hi, i'm aadi and i'm pursuing a m.sc in semiconductors and nanoscience.
+haha hi, i'm aadi and i'm pursuing a masters in semiconductors and nanoscience.

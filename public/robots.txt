@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-Allow: /
-Sitemap: https://aadi-bhattacharya.github.io/sitemap.xml
