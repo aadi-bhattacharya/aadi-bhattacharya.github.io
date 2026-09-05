@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  
+  <title>404</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://aadi-bhattacharya.github.io/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://aadi-bhattacharya.github.io/img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://aadi-bhattacharya.github.io/img/apple-touch-icon.png">
+  
+  <style>
+
+/* light mode colors */
+body {
+  --primary-color: #964308;
+  --primary-pale-color: #96430833;
+  --primary-decoration-color: #96430810;
+
+  --bg-color: #ddd5c7;
+  --text-color: #2a2a2a;
+  --text-pale-color: #5a5a5a;
+  --text-decoration-color: #8a7968;
+
+  --highlight-mark-color: #e8b89620;
+
+  --callout-note-color: #964308;
+  --callout-tip-color: #5a5a5a;
+  --callout-important-color: #e8b896;
+  --callout-warning-color: #8a7968;
+  --callout-caution-color: #d5cbb9;
+}
+
+/* dark mode colors */
+body.dark {
+  --primary-color: #ff7b47;
+  --primary-pale-color: #ff7b4733;
+  --primary-decoration-color: #ff7b4710;
+
+  --bg-color: #1f1f1c;
+  --text-color: #e8dcc6;
+  --text-pale-color: #a69b8f;
+  --text-decoration-color: #5a5347;
+
+  --highlight-mark-color: #4a2c1a20;
+
+  --callout-note-color: #ff7b47;
+  --callout-tip-color: #a69b8f;
+  --callout-important-color: #4a2c1a;
+  --callout-warning-color: #5a5347;
+  --callout-caution-color: #23231f;
+}
+
+  /* typography */
+  body {
+    --main-font: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --code-font: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --homepage-max-width: 768px;
+    --main-max-width: 768px;
+    --avatar-size: 60px;
+    --font-size: 16px;
+    --line-height: 1.75;
+    --img-border-radius: 0px;
+    --detail-border-radius: 0px;
+    --dark-mode-img-brightness: 0.75;
+    --dark-mode-chart-brightness: 0.75;
+    --inline-code-border-radius: 2px;
+    --inline-code-bg-color: var(--primary-decoration-color);
+    --block-code-border-radius: 0px;
+    --block-code-border-color: var(--primary-color);
+    --detail-border-color: var(--primary-color);
+  }
+
+</style>
+
+  <link rel="stylesheet" href="https://aadi-bhattacharya.github.io/main.css">
+  
+  
+</head>
+
+<body class="not-found">
+  
+  <script>
+    const theme = sessionStorage.getItem('theme');
+    const match = window.matchMedia("(prefers-color-scheme: dark)").matches
+    if ((theme && theme == 'dark') || (!theme && match)) {
+      document.body.classList.add('dark');
+      const hl = document.querySelector('link#hl');
+      if (hl) hl.href = 'https://aadi-bhattacharya.github.io/hl-dark.css';
+    }
+  </script>
+  
+  
+<div class="wrapper">
+  <p class="error">
+    404 not found
+  </p>
+  <a class="instant" href="https://aadi-bhattacharya.github.io">« back to home »</a>
+</div>
+
+  
+  <script src="https://aadi-bhattacharya.github.io/js/main.js"></script>
+</body>
+
+</html>
