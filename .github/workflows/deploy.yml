@@ -22,7 +22,7 @@ jobs:
       - name: Install Zola
         uses: taiki-e/install-action@v2
         with:
-          tool: zola@latest
+          tool: zola@0.18.0
 
       - name: Build site
         run: zola build
